@@ -1,0 +1,534 @@
+@font-face {
+    font-family: "applle";
+    src: url("./sf-pro-display_semibold.woff2") format("woff2");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: applle;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#page1{
+    height: 120%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.829);
+}
+#page1 nav{
+    height: 150px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    animation-name: nav;
+    animation-duration:0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+#b1{
+    display: flex;
+    gap: 20px;
+    color: red;
+}
+#b1 h1{
+    margin-top: 15px;
+}
+#b1 button{
+    color: red;
+    font-size: 40px;
+    padding: 10px 18px;
+    border: 1px solid red;
+    background-color: transparent;
+}
+#b2{
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+#b2 h1{
+margin-top: 16px;
+}
+#b2 i{
+    color: white;
+    font-size: 50px;
+    padding: 6px 10px;
+    border: 1px solid rgb(255, 255, 255);
+} 
+#line{
+    height: 1px;
+    width: 40%;
+    background-color: white;
+}
+#center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#center h1{
+    margin-top: 250px;
+    color: white;
+    font-size: 250px;
+    animation-name: textrl;
+    animation-duration:.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+#center h2{
+    color: white;
+    font-size: 140px;
+    letter-spacing: 40px;
+    animation-name: imgboard;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+#center button{
+    background-color: red;
+    color: white;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    padding: 40px 90px;
+    border-radius: 10px;
+    border: 2px solid red;
+    animation-name: textrl;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+#center button:hover{
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+    scale: 1.1;
+}
+#center img{
+    margin-bottom: 100px;
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+    filter: drop-shadow(10px 100px 10px rgba(0, 0, 0, 0.349));
+    animation-name: imgboard;
+    animation-duration:.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes imgboard {
+    from{   
+      opacity: 0;
+        transform: translateX(-10%); 
+    }
+    to{
+transform: translateX(0);
+    }
+}
+@keyframes textrl {
+    from{   
+      opacity: 0;
+        transform: translateX(10%);
+    }
+    to{
+transform: translateX(0);
+    }
+}
+@keyframes nav {
+from{
+    opacity: 0;
+    transform: translateY(-10%);
+}
+to{
+    transform: translateY(0);
+}
+}
+
+#page2
+{
+    margin-top: 10%;
+    height: 75%;
+    width:100% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page2 h2{
+    margin-top: 50px;
+    font-size: 70px;
+    color: rgba(0, 0, 0, 0.76);
+}
+#page2 h1{
+    margin-top: -30px;
+    font-size: 200px;
+    font-weight: 500;
+    color:black;
+}
+#page2 p{
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 100;
+    color:rgba(0, 0, 0, 0.692);
+}
+#page2 #image{
+    margin-top: 80px;
+    padding-left: 15%;
+    gap: 100px;
+    width: 100%;
+    display: flex;
+}
+#image img{
+    flex-wrap: nowrap;
+    height: 1200px;
+    width: 500px;
+    object-fit: cover;
+    opacity: 0;
+}
+
+ #king{
+    object-position:calc(-2290px);
+    animation-name: top;
+    animation-duration: 2s;
+    animation-timing-function: ease-out .3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+#p{
+    object-position: calc(-100px);
+    animation-name: bottom;
+    animation-duration: 2s;
+    animation-timing-function: ease-out .3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+#r{
+    object-position: calc(-500px);
+    animation-name: top;
+    animation-duration: 2s;
+    animation-timing-function: ease-out .3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+#k{
+    object-position: calc(-950px);
+    animation-name: bottom;
+    animation-duration: 2s;
+    animation-timing-function: ease-out .3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+#b{
+    object-position: calc(-1400px); 
+    animation-name: top;
+    animation-duration: 2s;
+    animation-timing-function: ease-out .3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+
+}
+#q{
+    object-position: calc(-1850px);
+        animation-name: bottom;
+        animation-duration: 2s;
+        animation-timing-function: ease-out .3s;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+}
+
+@keyframes top {
+    from{
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+    to{
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}@keyframes bottom {
+    from{
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    to{
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+#line1{
+    height: 5px;
+    width: 20%;
+    position: absolute;
+    top: 550px;
+    left: 640px;
+    background-color: rgba(255, 255, 255, 0.607);
+      animation-name: imgboard;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+#line2{
+     position: absolute;
+    top: 550px;
+    right: 640px;
+    height: 5px;
+    width: 20%;
+   background-color: rgba(255, 255, 255, 0.607);
+       animation-name: textrl;
+    animation-duration:.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+ 
+#page3{
+    margin-top: 7%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.806);
+    position: relative;
+}
+
+#page3 #inform
+{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#page3 #boxp
+{
+    margin-left: 10px;
+    height:49.6%;
+    width: 33%;
+    background-color: black;
+    z-index: 100;
+    position: relative;
+}
+
+#ki{
+    height: 800px;
+    width: 350px;
+    transform: translate(40% ,30%);
+       animation-name: pieces;
+       animation-duration: 2s;
+       animation-timing-function: ease-out;
+       animation-fill-mode: forwards;
+
+}
+#qu{
+    height: 800px;
+    width: 370px;
+    transform: translate(40% ,33%);
+       animation-name: pieces;
+       animation-duration: 2s;
+       animation-timing-function: ease-out;
+       animation-fill-mode: forwards;
+}
+#bi{
+    height: 800px;
+    width: 400px;
+    transform: translate(35% ,35%);
+       animation-name: pieces;
+       animation-duration: 2s;
+       animation-timing-function: ease-out;
+       animation-fill-mode: forwards;
+}
+#kn{
+    height: 800px;
+    width: 400px;
+    transform: translate(30% ,35%);
+       animation-name: pieces;
+       animation-duration: 2s;
+       animation-timing-function: ease-out;
+       animation-fill-mode: forwards;
+}
+#ro{
+    height: 800px;
+    width: 400px;
+    transform: translate(40% ,35%);
+       animation-name: pieces;
+       animation-duration: 2s;
+       animation-timing-function: ease-out;
+       animation-fill-mode: forwards;
+}
+#pa{
+    height: 600px;
+    width: 370px;
+    transform: translate(40% ,75%);
+       animation-name: pieces-pawn;
+       animation-duration: 2s;
+       animation-timing-function: ease-out;
+       animation-fill-mode: forwards;
+} 
+
+@keyframes pieces{
+    from
+    {
+        position: relative;
+        transform: translate(160% ,30%);
+    }
+    to{
+    }
+}
+@keyframes pieces-pawn{
+    from
+    {
+        position: relative;
+          transform: translate(170%,75%);
+    }
+    to{ 
+    }
+}
+
+#detail{
+    position: relative;
+    z-index: -1;
+    top: -100px;
+    height: 900px;
+    width: 1600px;
+    animation-name: information;
+       animation-duration: 2s;
+       animation-delay: 2.5s;
+       animation-timing-function: ease-out;
+       animation-fill-mode: forwards;
+    opacity: 0;
+}
+#detail h2{
+color: white;
+font-size: 80px;
+font-weight: 50;
+margin-top:-35% ;
+margin-left: 600px;
+}
+#detail h1{
+color: white;
+font-size: 140px;
+margin-top:-1% ;
+margin-left: 600px;
+}
+#detail p{
+    color: rgba(255, 255, 255, 0.644);
+    font-size: 50px;
+    margin-top: 2%;
+    margin-left: 600px;
+    font-weight: 10;
+}
+
+#detailp{
+    position: relative;
+    z-index: -1;
+    top: 100px;
+    height: 900px;
+    width: 1600px;
+     animation-name: information;
+       animation-duration: 2s;
+       animation-delay: 2.5s;
+       animation-timing-function: ease-out;
+       animation-fill-mode: forwards;
+    opacity: 0;
+}
+#detailp h2{
+color: white;
+font-size: 80px;
+font-weight: 50;
+margin-top:-35% ;
+margin-left: 600px;
+}
+#detailp h1{
+color: white;
+font-size: 140px;
+margin-top:-1% ;
+margin-left: 600px;
+}
+#detailp p{
+    color: rgba(255, 255, 255, 0.644);
+    font-size: 50px;
+    margin-top: 2%;
+    margin-left: 600px;
+    font-weight: 10;
+}
+
+@keyframes information {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#page4
+{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+#chessboard{
+    height: 100%;
+    width: 50%;
+    background-image: cover;
+    padding-left: 30%;
+    position: relative;
+    overflow: hidden;
+}
+#chessboard img{
+    height: 100%;
+    width: 200%;
+    transform: translateX(-50%);
+    background-size: cover;
+}
+
+#last{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 150px;
+}
+#last h1{
+    font-size: 180px;
+    font-weight: 1000;
+    margin-top: -30px;
+}
+#last h2{
+    font-size: 100px;
+    margin-top: 400px;
+    font-weight: 600;
+}
+#last p{
+    font-size: 50px;
+    text-align: center;
+    width: 2000px;
+}
+
+#viewm{
+    background-color: red;
+    color: white;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    padding: 40px 90px;
+    border-radius: 10px;
+    border: 2px solid red;
+    animation-name: textrl;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+#viewm:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    scale: 1.1;
+}
